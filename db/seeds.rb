@@ -8,6 +8,7 @@
 
 evette = Owner.create(name: "Evette")
 mac1 = evette.machines.create(location: "Turing School")
-sn1 = mac1.snacks.create(name: "Twizzlers", price: 12.5)
+mac2 = evette.machines.create(location: "Not Turing School")
+sn1 = Snack.create(name: "Twizzlers", price: 12.5, machines: [mac1, mac2])
 sn2 = mac1.snacks.create(name: "M&M", price: 1.5)
 sn3 = mac1.snacks.create(name: "Candytown", price: 3.5)
